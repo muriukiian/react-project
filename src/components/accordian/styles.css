@@ -24,7 +24,7 @@
   padding: 10px 20px;
 }
 .title{
-  color: white;
+  color: rgb(243, 242, 242);
   display: flex;
   justify-content: space-between;
   align-items: center;

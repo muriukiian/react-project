@@ -19,7 +19,7 @@ function Acordian(){
         <h1>Accordian</h1>
         {
           data && data.length > 0 ? 
-          data.map((dataItem) => <div className='item'>
+          data.map((dataItem) => <div className='item' key={dataItem.id}>
             <div>
               <h3 className='title' onClick={() => handleChange1(dataItem.id)}>{dataItem.title}</h3>
               <span>+</span>
