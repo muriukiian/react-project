@@ -22,7 +22,7 @@ function StarRating({noOfStars}){
     <div>
       {
         [...Array(noOfStars)].map((_,i) => 
-            <FaStar key={i} size={60} onClick={() => handleClick(i)} onMouseEnter={() => hoverIn(i)} onMouseLeave={() => hoverOut(i)} className={i <= (rating || hover) ? "active":"inactive"}/>
+            <FaStar key={i} size={60} onClick={() => handleClick(i)} onMouseEnter={() => hoverIn(i)} onMouseLeave={() => hoverOut()} className={i <= (rating || hover) ? "active":"inactive"}/>
         )
       }
     </div>
